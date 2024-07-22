@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:300,400|Oswald:400,700');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 30px;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(17deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.todolist {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.todolist h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.form-control {
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    min-height: 45px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.list li span {
+    cursor: pointer;
+}
