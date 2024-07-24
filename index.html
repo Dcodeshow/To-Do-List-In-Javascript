@@ -40,10 +40,10 @@
           let span = document.createElement("span");
           span.innerHTML = " &#10060;";
           li.appendChild(span);
-          saveData();
         }
 
         todovalue.value = "";
+        saveData();
       }
 
       list.addEventListener("click", function (e) {
@@ -53,12 +53,10 @@
         }
       });
 
-      //save data
       function saveData() {
         localStorage.setItem("data", list.innerHTML);
       }
 
-      //Get Data
       function getData() {
         list.innerHTML = localStorage.getItem("data");
       }
